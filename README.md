@@ -1,3 +1,3 @@
-# Mini-CSS-Activity
+# Mini-CSS-Activities
 
 • Range Slider
