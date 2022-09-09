@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RangeSlider</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <div>
+        <span id="value">0</span>
+        <Input class="range" type="range" value="0" min="0" max="1000" onchange="slide(this.value)" onmousemove="slide(this.value)"/></Input>
+    </div>
+    <script type="text/javascript">
+        function slide(value) {
+            document.getElementById("value").innerHTML=value;
+                }
+    </script>
+</body>
+</html>
