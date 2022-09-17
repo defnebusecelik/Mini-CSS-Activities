@@ -5,3 +5,5 @@
 • Toggle Switch
 
 • Slide Down Button
+
+• Search Bar
