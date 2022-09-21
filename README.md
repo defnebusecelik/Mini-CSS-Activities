@@ -9,3 +9,5 @@
 • Search Bar
 
 • Dropdown Menu
+
+• Transition Animation
