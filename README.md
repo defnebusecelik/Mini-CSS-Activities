@@ -11,3 +11,5 @@
 • Dropdown Menu
 
 • Transition Animation
+
+• Dark Mode Toggle
