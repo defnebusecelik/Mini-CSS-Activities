@@ -15,3 +15,5 @@
 • Dark Mode Toggle
 
 • Button Border Animation
+
+• Stopwatch
