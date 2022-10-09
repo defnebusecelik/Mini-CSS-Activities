@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    background-color: bisque;
+    place-items: center;
+}
+
+.wrap{
+    position: relative;
+    width: 750px;
+    height: 500px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 8px solid #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+}
+
+.wrap .image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.wrap .image .img1{
+    width: 100%;
+    height: 100%;
+    background: url("gunbatimi.jpg") no-repeat;
+}
+
+.wrap .image .img2{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: url("gunbatimi2.jpg") no-repeat;
+}
+
+.wrap .slide{
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: 99;
+}
+
+.wrap .slide input{
+    width: 100%;
+    outline: none;
+    background: none;
+    /*-webkit-appearance: none;*/
+}
+
+.slide input::-webkit-slider-thumb{
+    width: 5px;
+    height: 490px;
+    background: none;
+    cursor: col-resize;
+}
+
+.slide .line{
+    width: 5px;
+    height: 490px;
+    position: absolute;
+    left: 50%;
+    pointer-events: none;
+}
+
+.slide .line::before , .slide.line::after{
+    position: absolute;
+    content: "";
+    height: 220px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.slide .line::before{
+    top:0;
+}
+
+.slide .line::after{
+    bottom: 0;
+}
+
+.slide .line span{
+    height: 40px;
+    width: 40px;
+    border: 4px solid #fff;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide .line span::before, .slide .line span::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    border: 10px solid transparent;
+    border-bottom-width:0px;
+    border-right-width: 0px;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.slide .line span::before{
+    left: 40%;
+    border-left-color: #fff;
+}
+
+.slide .line span::after{
+    left: 60%;
+    border-top-color:#fff;
+}
