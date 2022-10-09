@@ -17,3 +17,5 @@
 • Button Border Animation
 
 • Stopwatch
+
+• Image Slider
